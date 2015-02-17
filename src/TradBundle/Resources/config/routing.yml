@@ -1,0 +1,6 @@
+trad_homepage:
+    path:     /{framework}/{_locale}
+    defaults: { _controller: TradBundle:Default:index, _locale: fr }
+    requirements:
+        framework: "[rR]ails|[sS]ymfony2|[mM]eteor"
+        _locale: en|fr

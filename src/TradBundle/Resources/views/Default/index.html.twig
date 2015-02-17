@@ -1,0 +1,57 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+
+
+    <div class="container">
+        <div class="row">
+            <h1>{{ 'malinois.title'|trans }}</h1>
+            <p>{% trans %}malinois.p1{% endtrans %}</p>
+
+            <p>C'est le plus rustique et le plus utilisé des chiens de berger belges dans les disciplines
+                comprenant du mordant.</p>
+
+            <p>Physiquement, le malinois est un lupoïde de taille moyenne, de construction médioligne,
+                qui allie la puissance de son ossature et de sa musculature sèche à l'élégance générale de ses
+                lignes et à la souplesse de ses allures. C'est un chien vif ayant de grandes facultés
+                d'apprentissage : si elles sont sollicitées régulièrement, il peut devenir très obéissant.
+                Chien au poil court de couleur fauve charbonné, c'est un chien rustique, qui nécessite peu
+                d'entretien.</p>
+
+            <p>Il brille dans la majorité des disciplines agréées par la SCC (agility, obéissance, ring,
+                Règlement de concours international canin, pistage, décombres...). Ces chiens sont aussi
+                utilisés par les forces de l'ordre (police, gendarmerie) et unités d'intervention (GIGN,
+                Unités cynophiles des forces armées françaises) pour leur rapidité.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Jack Daniel</h2>
+                <p>Le jack daniel est un animal très docile, surtout en soirée.Animal favori de Samuel7528.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Jack Russel</h2>
+                <p>Roxy est un petit jack russel très social qui va bientot faire face au malinois et son mordant.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Jack Lang</h2>
+                <p>C'est un animal politique qui aime la corruption, les soirées arosées, les rendez-vous qui ne
+                    servent à rien etc..</p>
+            </div>
+        </div>
+
+        <div class="row">
+            {{ trad }}
+        </div>
+    </div>
+
+{% endblock %}
